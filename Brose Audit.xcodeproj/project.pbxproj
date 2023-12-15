@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E81CC04D29AA816D00B7C311 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CC04C29AA816D00B7C311 /* CalendarView.swift */; };
+		E83D2E942994CEEE005006D7 /* AuditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E932994CEEE005006D7 /* AuditsView.swift */; };
+		E83D2E992994D80F005006D7 /* Audit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E982994D80F005006D7 /* Audit.swift */; };
+		E863291829A51626000D6F6D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E863291729A51626000D6F6D /* QuestionView.swift */; };
+		E88D75B9299D4B750078EA15 /* AuditDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88D75B8299D4B750078EA15 /* AuditDetailView.swift */; };
+		E88D75BB299D69160078EA15 /* AudtListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88D75BA299D69160078EA15 /* AudtListView.swift */; };
+		E8BE2B6F29BE7432002B8565 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE2B6E29BE7432002B8565 /* SettingsView.swift */; };
+		E8BE2B7129BE7BA1002B8565 /* AuditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE2B7029BE7BA1002B8565 /* AuditModel.swift */; };
+		E8C2FE0C29ADFC2000E906FD /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C2FE0B29ADFC2000E906FD /* HideKeyboard.swift */; };
+		E8CBD1F629B4D88D005F8873 /* QuestionScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBD1F529B4D88D005F8873 /* QuestionScrollView.swift */; };
+		E8CBE24C29939DAA00565DD7 /* Brose_AuditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBE24B29939DAA00565DD7 /* Brose_AuditApp.swift */; };
+		E8CBE24E29939DAA00565DD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBE24D29939DAA00565DD7 /* ContentView.swift */; };
+		E8CBE25029939DAB00565DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CBE24F29939DAB00565DD7 /* Assets.xcassets */; };
+		E8CBE25329939DAB00565DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CBE25229939DAB00565DD7 /* Preview Assets.xcassets */; };
+		E8CBE25A29939E3900565DD7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBE25929939E3900565DD7 /* WelcomeView.swift */; };
+		E8CBE25C29939E4300565DD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBE25B29939E4300565DD7 /* LoginView.swift */; };
+		E8CBE25F29939F2A00565DD7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBE25E29939F2A00565DD7 /* CustomButton.swift */; };
+		E8CBE2612993C3DD00565DD7 /* WorkflowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBE2602993C3DD00565DD7 /* WorkflowButton.swift */; };
+		E8F1C2DA29AE262500337891 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F1C2D929AE262500337891 /* CameraModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E81CC04C29AA816D00B7C311 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E83D2E932994CEEE005006D7 /* AuditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditsView.swift; sourceTree = "<group>"; };
+		E83D2E982994D80F005006D7 /* Audit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audit.swift; sourceTree = "<group>"; };
+		E863291729A51626000D6F6D /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		E88D75B8299D4B750078EA15 /* AuditDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditDetailView.swift; sourceTree = "<group>"; };
+		E88D75BA299D69160078EA15 /* AudtListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudtListView.swift; sourceTree = "<group>"; };
+		E8BE2B6E29BE7432002B8565 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E8BE2B7029BE7BA1002B8565 /* AuditModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditModel.swift; sourceTree = "<group>"; };
+		E8C2FE0B29ADFC2000E906FD /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		E8CBD1F529B4D88D005F8873 /* QuestionScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionScrollView.swift; sourceTree = "<group>"; };
+		E8CBE24829939DAA00565DD7 /* Brose Audit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brose Audit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CBE24B29939DAA00565DD7 /* Brose_AuditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brose_AuditApp.swift; sourceTree = "<group>"; };
+		E8CBE24D29939DAA00565DD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8CBE24F29939DAB00565DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8CBE25229939DAB00565DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8CBE25929939E3900565DD7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		E8CBE25B29939E4300565DD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E8CBE25E29939F2A00565DD7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E8CBE2602993C3DD00565DD7 /* WorkflowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowButton.swift; sourceTree = "<group>"; };
+		E8F1C2D929AE262500337891 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		E8F1C2DB29AE26F200337891 /* Brose-Audit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Brose-Audit-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8CBE24529939DAA00565DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E83D2E952994D6DD005006D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBE24D29939DAA00565DD7 /* ContentView.swift */,
+				E8CBE25929939E3900565DD7 /* WelcomeView.swift */,
+				E8CBE25B29939E4300565DD7 /* LoginView.swift */,
+				E83D2E932994CEEE005006D7 /* AuditsView.swift */,
+				E88D75B8299D4B750078EA15 /* AuditDetailView.swift */,
+				E88D75BA299D69160078EA15 /* AudtListView.swift */,
+				E863291729A51626000D6F6D /* QuestionView.swift */,
+				E8BE2B6E29BE7432002B8565 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E83D2E962994D71F005006D7 /* Subfiles */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBE24B29939DAA00565DD7 /* Brose_AuditApp.swift */,
+				E8CBE24F29939DAB00565DD7 /* Assets.xcassets */,
+			);
+			path = Subfiles;
+			sourceTree = "<group>";
+		};
+		E83D2E972994D742005006D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E83D2E982994D80F005006D7 /* Audit.swift */,
+				E8F1C2D929AE262500337891 /* CameraModel.swift */,
+				E8BE2B7029BE7BA1002B8565 /* AuditModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8C2FE0A29ADFC0700E906FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8C2FE0B29ADFC2000E906FD /* HideKeyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8CBE23F29939DAA00565DD7 = {
+			isa = PBXGroup;
+			children = (
+				E8CBE24A29939DAA00565DD7 /* Brose Audit */,
+				E8CBE24929939DAA00565DD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8CBE24929939DAA00565DD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBE24829939DAA00565DD7 /* Brose Audit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8CBE24A29939DAA00565DD7 /* Brose Audit */ = {
+			isa = PBXGroup;
+			children = (
+				E8F1C2DB29AE26F200337891 /* Brose-Audit-Info.plist */,
+				E8C2FE0A29ADFC0700E906FD /* Extensions */,
+				E83D2E972994D742005006D7 /* Models */,
+				E83D2E952994D6DD005006D7 /* Views */,
+				E8CBE25D29939F1700565DD7 /* Components */,
+				E83D2E962994D71F005006D7 /* Subfiles */,
+				E8CBE25129939DAB00565DD7 /* Preview Content */,
+			);
+			path = "Brose Audit";
+			sourceTree = "<group>";
+		};
+		E8CBE25129939DAB00565DD7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBE25229939DAB00565DD7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8CBE25D29939F1700565DD7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBE25E29939F2A00565DD7 /* CustomButton.swift */,
+				E8CBE2602993C3DD00565DD7 /* WorkflowButton.swift */,
+				E81CC04C29AA816D00B7C311 /* CalendarView.swift */,
+				E8CBD1F529B4D88D005F8873 /* QuestionScrollView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8CBE24729939DAA00565DD7 /* Brose Audit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CBE25629939DAB00565DD7 /* Build configuration list for PBXNativeTarget "Brose Audit" */;
+			buildPhases = (
+				E8CBE24429939DAA00565DD7 /* Sources */,
+				E8CBE24529939DAA00565DD7 /* Frameworks */,
+				E8CBE24629939DAA00565DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brose Audit";
+			productName = "Brose Audit";
+			productReference = E8CBE24829939DAA00565DD7 /* Brose Audit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8CBE24029939DAA00565DD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E8CBE24729939DAA00565DD7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = E8CBE24329939DAA00565DD7 /* Build configuration list for PBXProject "Brose Audit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8CBE23F29939DAA00565DD7;
+			productRefGroup = E8CBE24929939DAA00565DD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8CBE24729939DAA00565DD7 /* Brose Audit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8CBE24629939DAA00565DD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CBE25329939DAB00565DD7 /* Preview Assets.xcassets in Resources */,
+				E8CBE25029939DAB00565DD7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8CBE24429939DAA00565DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CBE24E29939DAA00565DD7 /* ContentView.swift in Sources */,
+				E88D75B9299D4B750078EA15 /* AuditDetailView.swift in Sources */,
+				E8CBE25A29939E3900565DD7 /* WelcomeView.swift in Sources */,
+				E863291829A51626000D6F6D /* QuestionView.swift in Sources */,
+				E8CBE25C29939E4300565DD7 /* LoginView.swift in Sources */,
+				E81CC04D29AA816D00B7C311 /* CalendarView.swift in Sources */,
+				E8F1C2DA29AE262500337891 /* CameraModel.swift in Sources */,
+				E8CBE24C29939DAA00565DD7 /* Brose_AuditApp.swift in Sources */,
+				E83D2E942994CEEE005006D7 /* AuditsView.swift in Sources */,
+				E8BE2B6F29BE7432002B8565 /* SettingsView.swift in Sources */,
+				E8C2FE0C29ADFC2000E906FD /* HideKeyboard.swift in Sources */,
+				E88D75BB299D69160078EA15 /* AudtListView.swift in Sources */,
+				E8CBD1F629B4D88D005F8873 /* QuestionScrollView.swift in Sources */,
+				E83D2E992994D80F005006D7 /* Audit.swift in Sources */,
+				E8CBE2612993C3DD00565DD7 /* WorkflowButton.swift in Sources */,
+				E8BE2B7129BE7BA1002B8565 /* AuditModel.swift in Sources */,
+				E8CBE25F29939F2A00565DD7 /* CustomButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E8CBE25429939DAB00565DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8CBE25529939DAB00565DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8CBE25729939DAB00565DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brose Audit/Preview Content\"";
+				DEVELOPMENT_TEAM = 48PCKXTHH4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Brose-Audit-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera permission";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apps-lanham.Brose-Audit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8CBE25829939DAB00565DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brose Audit/Preview Content\"";
+				DEVELOPMENT_TEAM = 48PCKXTHH4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Brose-Audit-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera permission";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apps-lanham.Brose-Audit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8CBE24329939DAA00565DD7 /* Build configuration list for PBXProject "Brose Audit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CBE25429939DAB00565DD7 /* Debug */,
+				E8CBE25529939DAB00565DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CBE25629939DAB00565DD7 /* Build configuration list for PBXNativeTarget "Brose Audit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CBE25729939DAB00565DD7 /* Debug */,
+				E8CBE25829939DAB00565DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8CBE24029939DAA00565DD7 /* Project object */;
+}
