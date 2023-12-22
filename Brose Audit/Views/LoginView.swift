@@ -39,6 +39,7 @@ struct LoginView: View {
                     .multilineTextAlignment(.center)
                     .cornerRadius(5)
                     .keyboardType(.numberPad)
+                    .shadow(color: .gray, radius: 2, x: 0.5, y: 2)
                     .onTapGesture {
                        
                         self.hideKeyboard()
@@ -53,12 +54,13 @@ struct LoginView: View {
                     .cornerRadius(5)
                     .keyboardType(.default)
                     .autocorrectionDisabled(true)
+                    .shadow(color: .gray, radius: 2, x: 0.5, y: 2)
                     .onTapGesture {
                         self.hideKeyboard()
                     }
                
                 
-                Spacer()
+               
                 
                 // MARK: LoginButton
                 NavigationLink {
@@ -69,10 +71,12 @@ struct LoginView: View {
                 } label: {
                     CustomButton(text: "Login")
                 }
+                .padding(.top, 30)
                 .disabled(personalnummer.isEmpty || passwort.isEmpty)
                 .onTapGesture {
                     self.hideKeyboard()
                 }
+                Spacer()
                 
             }
         // MARK: -> Toolbar

@@ -39,8 +39,6 @@ struct WelcomeView: View {
                     
                    Divider()
                       
-                   
-                    
                     VStack(alignment: .center) {
                         VStack(alignment: .center) {
                            Spacer()
@@ -61,7 +59,7 @@ struct WelcomeView: View {
                 }
            
             NavigationLink {
-                AudtListView(workSection: 0, workStation: 0)
+                AuditListView(workSection: 0, workStation: 0, checkOSD: 0)
             } label: {
               CustomButton(text: "Neues Audit anlegen")
                     .foregroundColor(.white)
