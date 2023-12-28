@@ -28,7 +28,7 @@ struct SettingsView: View {
                 
                 Section("Version") {
                     VStack(alignment: .leading) {
-                        Text("Version 1.1 - 03.04.2023")
+                        Text("Version 1.0 - 28.12.2023")
                             .foregroundColor(.secondary)
                     }
                 }

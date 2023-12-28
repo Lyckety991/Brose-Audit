@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E81CC04D29AA816D00B7C311 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CC04C29AA816D00B7C311 /* CalendarView.swift */; };
+		E836052A2B3C6686003A9885 /* AuditDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83605292B3C6686003A9885 /* AuditDetail.swift */; };
 		E83D2E992994D80F005006D7 /* Audit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E982994D80F005006D7 /* Audit.swift */; };
 		E83FC3B92B35C7F2004643F3 /* AuditDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E83FC3B72B35C7F2004643F3 /* AuditDataModel.xcdatamodeld */; };
 		E83FC3BB2B35C988004643F3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83FC3BA2B35C988004643F3 /* DataController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		E81CC04C29AA816D00B7C311 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E83605292B3C6686003A9885 /* AuditDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditDetail.swift; sourceTree = "<group>"; };
 		E83D2E982994D80F005006D7 /* Audit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audit.swift; sourceTree = "<group>"; };
 		E83FC3B82B35C7F2004643F3 /* AuditDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AuditDataModel.xcdatamodel; sourceTree = "<group>"; };
 		E83FC3BA2B35C988004643F3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				E8CBE2602993C3DD00565DD7 /* WorkflowButton.swift */,
 				E81CC04C29AA816D00B7C311 /* CalendarView.swift */,
 				E8CBD1F529B4D88D005F8873 /* QuestionScrollView.swift */,
+				E83605292B3C6686003A9885 /* AuditDetail.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				E8CBE24E29939DAA00565DD7 /* ContentView.swift in Sources */,
 				E83FC3B92B35C7F2004643F3 /* AuditDataModel.xcdatamodeld in Sources */,
 				E8CBE25A29939E3900565DD7 /* WelcomeView.swift in Sources */,
+				E836052A2B3C6686003A9885 /* AuditDetail.swift in Sources */,
 				E863291829A51626000D6F6D /* QuestionView.swift in Sources */,
 				E8CBE25C29939E4300565DD7 /* LoginView.swift in Sources */,
 				E81CC04D29AA816D00B7C311 /* CalendarView.swift in Sources */,

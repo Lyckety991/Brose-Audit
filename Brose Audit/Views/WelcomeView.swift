@@ -9,68 +9,80 @@ import SwiftUI
 
 struct WelcomeView: View {
     
-    @State var toDoArray = [
+    @ObservedObject var auditList: AuditList = AuditList()
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var audit:
+    FetchedResults<Audit>
     
-        "LPA Audit G70 EM",
-        "LPA Audit B8 EM",
-        "LPA Audit G70 VM"
-    
-    
-    ]
-    
-    @State var dateArray = [
-    
-        "24.03.23",
-        "15.04.23",
-        "20.4.23"
-    
-    ]
-    
-    @State var toDoText = ""
-    
+  
     
     var body: some View {
         
-        VStack {
+        
+      
+        
+        NavigationView {
            
                 VStack(alignment: .center) {
-                    CalendarView()
-                        .padding()
                     
-                   Divider()
-                      
-                    VStack(alignment: .center) {
-                        VStack(alignment: .center) {
-                           Spacer()
-                            Image(systemName: "list.clipboard")
-                                .resizable()
-                                .frame(width: 60, height: 75)
-                                .foregroundColor(.secondary)
-                            Text("Alles erledigt!")
-                                .font(.title2)
-                                .foregroundColor(.secondary)
-                            
-                           Spacer()
-                            
+                   
+                 
+                    ScrollView {
+                        
+                        ForEach(audit) { audits in
+                            AuditDetail(title: audits.nameOfWorker!, producLine: audits.personalNumber!, date: audits.date!)
                         }
+                    
+                         
+                            
                         
                     }
                    
+                   
                 }
+                .navigationTitle("Übersicht")
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        NavigationLink {
+                            SettingsView()
+                        } label: {
+                            Image(systemName: "gear.circle")
+                                .bold()
+                        }
+                        
+                    }
+                    
+                    ToolbarItem(placement: .topBarTrailing) {
+                        NavigationLink {
+                            AuditListView(auditList: AuditList(), workSection: 0, workStation: 0, checkOSD: 0)
+                        } label: {
+                            Image(systemName: "chart.bar.doc.horizontal")
+                                    .bold()
+                       
+                        }
+                        
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        NavigationLink {
+                            
+                        } label: {
+                            Image(systemName: "chart.xyaxis.line")
+                                .bold()
+                           
+                        }
+                        
+                    }
+                }
+            
+            
            
-            NavigationLink {
-                AuditListView(workSection: 0, workStation: 0, checkOSD: 0)
-            } label: {
-              CustomButton(text: "Neues Audit anlegen")
-                    .foregroundColor(.white)
-            }
+           
+          
+           
             
             
         }
-        .toolbar(.hidden, for: .navigationBar)
-        .tabViewStyle(.page)
-        .indexViewStyle(.page(backgroundDisplayMode: .always))
-        .navigationTitle("Willkommen bei Brose Audit")
+      
+       
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("Background"))
     }

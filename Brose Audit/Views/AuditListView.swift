@@ -3,38 +3,44 @@
 //  Brose Audit
 //
 //  Created by Patrick Lanham on 15.02.23.
-//  Updated on 22.12.23
+//  Updated on 23.12.23
 
 import SwiftUI
 
 struct AuditListView: View {
     
-    @Environment(\.managedObjectContext) var managedObjContext // Core Data Speicherung 
+    @Environment(\.managedObjectContext) var managedObjContext // Core Data Speicherung
+    @Environment(\.dismiss) var dismiss
+    @ObservedObject var auditList: AuditList // Verbindung zur Audit Klasse und den Funktionen
+    @FocusState private var focusedField: Field? // Erkennt sobald ein Textfeld ausgewählt wird
     
-    @State var userArray = []
-    
+    // MARK: - Variablen
     @State private var nameOfWorker = ""
     @State private var personalNumber = ""
     @State private var addInformation = ""
     
     @State var workSection: Int
+    let workSectionOptions = ["-----","BMW G70 EM", "BMW G70 VM", "BMW G11/12 RR EM"]
+    
     @State var workStation: Int
+    let workStationOptions = ["-----", "AP1", "AP2", "AP3", "AP4", "AP5", "AP6", "EOL"]
     
     @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
-    @State private var selectedImage: UIImage?
+    @State private var selectedImage: UIImage? = nil
     @State private var isImagePickerDisplay = false
     
+    @State var checkOSD: Int = 0
+    let checkOSDOptions = ["-----","Nach Vorgabe", "Mit Mängeln"]
     
-    @State var checkOSD: Int
     @State var checkOSDInfo: String = ""
     
     private enum Field: Int {
         case textEdit
         
     }
+   
     
-    @FocusState private var focusedField: Field?
-    
+   
     var body: some View {
         
         VStack {
@@ -74,50 +80,24 @@ struct AuditListView: View {
                 
                 Section("Abteilung & Anlage") {
                     Picker("Abteilung", selection: $workSection) {
-                        
-                     
-                        Text("--").tag(0)
-                        Text("BMW G70 EM").tag(1)
-                        Text("BMW G70 VM").tag(2)
-                        Text("BMW G11/12 RR EM").tag(3)
+                        ForEach(0..<workSectionOptions.count) { index in
+                            Text(self.workSectionOptions[index])
+                        }
                     }
-                    .font(.system(size: 15))
                     
                     Picker("Arbeitsplatz", selection: $workStation) {
-                        Text("--").tag(0)
-                        Text("AP1").tag(1)
-                        Text("AP2").tag(2)
-                        Text("AP3").tag(3)
-                        Text("AP4").tag(4)
-                        Text("AP5").tag(5)
-                        Text("AP6").tag(6)
-                        Text("EOL").tag(7)
-                        
+                        ForEach(0..<workStationOptions.count) { index in
+                            Text(self.workStationOptions[index])
+                        }
                     }
-                    .font(.system(size: 15))
-                   
-                    
-                    // MARK: -> Save Button for Name and Personalnumber
-                    
-                    
-                    Button {
-                        
-                        nameOfWorker = ""
-                        personalNumber = ""
-                        self.hideKeyboard()
-                        
-                    } label: {
-                        Text("Speichern")
-                    }
-                    .disabled(nameOfWorker.isEmpty || personalNumber.isEmpty)
-                    
                 }
+
                 
                 Section("Ordnung und Sauberkeit") {
                     Picker("Ordnung & Sauberkeit", selection: $checkOSD) {
-                        Text("--").tag(0)
-                        Text("Nach Vorgabe").tag(1)
-                        Text("Mit Mängel").tag(2)
+                        ForEach(0..<checkOSDOptions.count) { index in
+                            Text(self.checkOSDOptions[index])
+                                       }
                     }
                     .font(.system(size: 15))
                     
@@ -137,14 +117,7 @@ struct AuditListView: View {
                             hideKeyboard()
                         }
                     
-                    // Safe button
-                    Button {
-                        
-                        checkOSDInfo = ""
-                        
-                    } label: {
-                        Text("Speichern")
-                    }
+                   
                     
                 }
                 
@@ -190,17 +163,34 @@ struct AuditListView: View {
                             self.hideKeyboard()
                         }
                     
-                    Button {
-                        addInformation = ""
-                    } label: {
-                        Text("Speichern")
-                    }
-                    .disabled(addInformation.isEmpty)
+                  
                     
                 }
                 
-                NavigationLink {
-                    QuestionView(checkOSD: 0)
+                Button {
+                    
+                   let audit = Audit(context: managedObjContext)
+                    audit.nameOfWorker = nameOfWorker
+                    audit.personalNumber = personalNumber
+                    audit.workStation = Int16(workStation)
+                    audit.workSection = Int16(workSection)
+                    audit.checkOSD = Int16(checkOSD)
+                    audit.checkOSDInfo = checkOSDInfo
+                    audit.addInformation = addInformation
+                    audit.id = UUID()
+                    
+                    audit.date = Date()
+                    
+                    do {
+                        try managedObjContext.save()
+                        print("Daten erfolgreich gespeichert")
+                    } catch {
+                        let nsError = error as NSError
+                        fatalError("Unsolved error \(nsError)")
+                    }
+                    dismiss()
+                    
+                   
                 } label: {
                     Text("Weiter")
                 }
@@ -219,6 +209,6 @@ struct AuditListView: View {
 
 struct AudtListView_Previews: PreviewProvider {
     static var previews: some View {
-        AuditListView(workSection: 0, workStation: 0, checkOSD: 0)
+        AuditListView(auditList: AuditList(), workSection: 0, workStation: 0, checkOSD: 0)
     }
 }
